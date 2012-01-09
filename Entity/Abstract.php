@@ -20,6 +20,7 @@ abstract class Domain_Entity_Abstract implements Domain_Entity_Interface
     public function markClean()
     {
         $this->_cleanFields     = array();
+        return $this;
     }
 
     public function isDirty($field = null)
